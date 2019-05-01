@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import { FaStar } from 'react-icons/fa'
-import { Box, Column, Icon } from "rbx"
- 
+import { Column } from "rbx"
 import Restaurant from "./restaurant.js"
  
 class ListRestaurants extends Component {
