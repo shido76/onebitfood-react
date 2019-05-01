@@ -17,8 +17,8 @@ const Restaurant = (props) => (
           <span className="dashed_box">Entrega ${props.delivery_tax}</span>
         </Column>
         <Column size={2} id="reviews">
-          <Icon size="medium" color="warning">
-            <FaStar/>
+          <Icon size="small" color="warning">
+            <FaStar />
           </Icon>
           <span className="has-text-warning has-text-weight-bold">{props.review}</span>
         </Column>

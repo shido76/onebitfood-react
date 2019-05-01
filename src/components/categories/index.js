@@ -15,26 +15,32 @@ class Categories extends Component {
     this.state = {
       categories: [
         {
+          'id': '1',
           'title': 'japonesa',
           'image_url': 'https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350'
         },
         {
+          'id': '2',
           'title': 'arabe',
           'image_url': 'https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350'
         },
         {
+          'id': '3',
           'title': 'vegana',
           'image_url': 'https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350'
         },
         {
+          'id': '4',
           'title': 'italiana',
           'image_url': 'https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350'
         },
         {
+          'id': '5',
           'title': 'peruana',
           'image_url': 'https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350'
         },
         {
+          'id': '6',
           'title': 'chinesa',
           'image_url': 'https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350'
         }
@@ -50,7 +56,7 @@ class Categories extends Component {
           <Slider {...slickSettings}>
             {this.state.categories.map(category => {
               return (
-                <Link to={`/restaurants?category=${category.title}`}>
+                <Link key={category.id} to={`/restaurants?category=${category.title}`}>
                   <div className="slider-item">
                     <img src={category.image_url} alt="new"/>
                     <span>{category.title}</span>
