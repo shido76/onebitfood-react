@@ -4,15 +4,14 @@ import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { Provider } from "react-redux"
-import Store from "./store"
+import configureAppStore from './store'
 
-ReactDOM.render(<App />, document.getElementById('root'))
-serviceWorker.unregister()
+const store = configureAppStore()
 
 ReactDOM.render(
-  <Provider store={Store}>
+  <Provider store={store}>
     <App />
-  </Provider>, 
-  document.getElementById('root')
+  </Provider> 
+  , document.getElementById('root')
 )
 serviceWorker.unregister()
