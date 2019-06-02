@@ -3,7 +3,7 @@ import { Column, Button, Icon, Title } from "rbx"
 import { FaCrosshairs } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-import "../../styles/home.scss"
+import "../../assets/styles/home.scss"
  
 const Home = () => (
   <Column.Group centered>

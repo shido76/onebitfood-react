@@ -2,7 +2,7 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { Box, Column, Icon } from "rbx";
  
-import "../../styles/restaurant.scss"
+import "../../assets/styles/restaurant.scss"
  
 const Restaurant = (props) => (
   <Column size="one-third" id="restaurant">
@@ -16,11 +16,11 @@ const Restaurant = (props) => (
           <h4 className="subtitle has-text-weight-bold">{props.category_title}</h4>
           <span className="dashed_box">Entrega ${props.delivery_tax}</span>
         </Column>
-        <Column size={2} id="reviews">
+        <Column size={3} id="reviews">
           <Icon size="small" color="warning">
             <FaStar />
           </Icon>
-          <span className="has-text-warning has-text-weight-bold">{props.review}</span>
+          <span className="has-text-warning has-text-weight-bold">{props.review || 0}</span>
         </Column>
       </Column.Group>
     </Box>

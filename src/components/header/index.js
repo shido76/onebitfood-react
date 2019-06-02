@@ -3,7 +3,7 @@ import React from 'react'
 import { Navbar, Container } from 'rbx'
 import LogoImage from '../../assets/images/logo-v1-horizontal.png'
  
-import "../../styles/header.scss"
+import "../../assets/styles/header.scss"
  
 const Header = () => (
   <Navbar>
