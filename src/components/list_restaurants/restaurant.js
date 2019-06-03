@@ -1,11 +1,12 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { Box, Column, Icon } from "rbx";
- 
+import { Link } from "react-router-dom"
 import "../../assets/styles/restaurant.scss"
  
 const Restaurant = (props) => (
   <Column size="one-third" id="restaurant">
+    <Link to={`/restaurants/${props.id}`}></Link>
     <Box>
       <Column.Group gapless>
         <Column size={3} textAlign="centered">

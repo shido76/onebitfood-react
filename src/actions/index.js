@@ -9,3 +9,11 @@ export const loadRestaurants = (category = null) => async (dispatch) => {
     data: response.data.restaurants
   })
 }
+
+export const searchRestaurants = (search) => async (dispatch) => {
+  let response = await api.searchRestaurants(search)
+  dispatch({
+    type: LOAD_RESTAURANTS,
+    data: response.data.restaurants
+  })
+}
