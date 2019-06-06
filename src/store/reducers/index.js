@@ -1,8 +1,10 @@
 import { restaurantReducer } from './restaurantReducer'
-//import { otherReducer } from './otherReducer'
+import { modalReducer } from './modalReducer'
+import { addressReducer } from './addressReducer'
 import { combineReducers } from 'redux'
 
 export const rootReducer = combineReducers({
   restaurantState: restaurantReducer,
-  //otherState: otherReducer
+  modalState: modalReducer,
+  addressState: addressReducer
 })
